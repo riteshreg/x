@@ -1,3 +1,6 @@
 [submodule "convertnepal"]
 	path = convertnepal
 	url = git@github.com:riteshreg/convertnepal.git
+[submodule "sum_moudle"]
+	path = sum_moudle
+	url = git@github.com:riteshreg/sum_moudle.git
