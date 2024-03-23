@@ -1,6 +1,10 @@
 # Use an official Node.js runtime as the base image
 FROM node:18-alpine
 
+
+# Install Git
+RUN apk update && apk add --no-cache git
+
 # Set the working directory in the container
 WORKDIR /app
 
@@ -12,6 +16,10 @@ RUN npm install
 
 # Copy the rest of the application code to the working directory
 COPY . .
+
+
+# Clone submodules
+RUN git submodule update --init --recursive
 
 
 # Expose the port your app runs on
