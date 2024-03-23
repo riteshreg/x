@@ -1,0 +1,3 @@
+[submodule "convertnepal"]
+	path = convertnepal
+	url = git@github.com:riteshreg/convertnepal.git
